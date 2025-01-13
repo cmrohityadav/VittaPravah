@@ -1,5 +1,5 @@
-import { useColorScheme } from "react-native";
-import { Colors } from "../constants/Colors";
+import { useColorScheme } from 'react-native';
+import { Colors } from '../constants/Colors';
 
 
 interface ThemeColors {
@@ -42,5 +42,5 @@ export const darkTheme: Theme = {
 
 export const useCustomTheme = (): Theme => {
   const scheme = useColorScheme();
-  return scheme === "dark" ? darkTheme : lightTheme;
+  return scheme === 'dark' ? darkTheme : lightTheme;
 };
