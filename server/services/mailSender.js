@@ -43,3 +43,14 @@ export const mailSender=async (email,OtpGenerator,otp_type)=>{
         throw error;
     }
 }
+
+export const generateOTP=()=>{
+    const otp=OtpGenerator.generate(6,{
+        upperCaseAlphabets:false,
+        lowerCaseAlphabets:false,
+        specialChars:false,
+
+    });
+
+    return otp;
+}
